@@ -1,0 +1,32 @@
+package xyz.cglzwz.designpattern.bp;
+
+/**
+ * 英雄角色创建者，充当具体创建者
+ * 
+ * @author chgl16
+ * @date 2019-03-13
+ */
+
+public class HeroBuilder extends ActorBuilder {
+
+	@Override
+	public void buildType() {
+		// 调用父类的对象
+		actor.setType("英雄");
+	}
+
+	@Override
+	public void buildSex() {
+		actor.setSex("男");
+	}
+
+	@Override
+	public void buildFace() {
+		actor.setFace("英俊");
+	}
+
+	@Override
+	public void buildCostume() {
+		actor.setCostume("汉服");
+	}
+}
